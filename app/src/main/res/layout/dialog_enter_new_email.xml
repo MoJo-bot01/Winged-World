@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialogMessage"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="15sp"
+            android:text="Enter The Email That You Would Like Us To Reply You To"
+            android:layout_marginTop="20dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailTil"
+            android:layout_width="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialogMessage"
+            android:layout_marginTop="30dp"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/emailEt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_edittext1"
+                android:drawableStart="@drawable/email_gray"
+                android:drawablePadding="10dp"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray1"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailTil"
+            android:text="Next"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-thin"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"/>
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-thin"
+            android:layout_below="@id/emailTil"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

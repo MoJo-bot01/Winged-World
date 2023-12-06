@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "783533026227",
+    "firebase_url": "https://winged-world-default-rtdb.firebaseio.com",
+    "project_id": "winged-world",
+    "storage_bucket": "winged-world.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783533026227:android:cb143c582a52781e14b9c6",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783533026227-qq2un0jkkpassoptiup1dj0pb8inpm3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEP-QT70Xl--vAkuaD_CNz-iYmRx0Wphc"
+        },
+        {
+          "current_key": "AIzaSyBRMGAmPPBMVqWKE4GJYx9UtbTIof8_SK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783533026227-qq2un0jkkpassoptiup1dj0pb8inpm3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783533026227:android:ae56f30d5697277f14b9c6",
+        "android_client_info": {
+          "package_name": "com.example.mymapapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783533026227-qq2un0jkkpassoptiup1dj0pb8inpm3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEP-QT70Xl--vAkuaD_CNz-iYmRx0Wphc"
+        },
+        {
+          "current_key": "AIzaSyBRMGAmPPBMVqWKE4GJYx9UtbTIof8_SK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783533026227-qq2un0jkkpassoptiup1dj0pb8inpm3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783533026227:android:395f300545c34b4914b9c6",
+        "android_client_info": {
+          "package_name": "com.example.wingedworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783533026227-i7fvkmegk06gnk1atjkphvg6uucpfdja.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wingedworld",
+            "certificate_hash": "54e9f2e87a13d5eb12741ba58114c757afbf61f9"
+          }
+        },
+        {
+          "client_id": "783533026227-qq2un0jkkpassoptiup1dj0pb8inpm3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEP-QT70Xl--vAkuaD_CNz-iYmRx0Wphc"
+        },
+        {
+          "current_key": "AIzaSyBRMGAmPPBMVqWKE4GJYx9UtbTIof8_SK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783533026227-qq2un0jkkpassoptiup1dj0pb8inpm3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

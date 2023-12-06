@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/closeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close_black"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentStart="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Email"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-thin"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/dialogMessage"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="15sp"
+            android:text="Do You Still Have Access To The Following Email: "
+            android:layout_below="@id/dialogTitle"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:id="@+id/emailMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="15sp"
+            android:text="abd@gmail.com"
+            android:layout_below="@id/dialogMessage"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/yesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailMessage"
+            android:text="Yes"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-thin"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"/>
+
+        <Button
+            android:id="@+id/noButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-thin"
+            android:layout_below="@id/emailMessage"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

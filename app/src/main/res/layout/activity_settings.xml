@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.activities.SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar2">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="Settings"
+            android:fontFamily="sans-serif-thin"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_black"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarRl"
+        android:layout_marginTop="10dp"
+        android:id="@+id/profileRl">
+
+        <TextView
+            android:id="@+id/Tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_marginStart="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/profileView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/person_black" />
+
+        <ImageView
+            android:id="@+id/editProfileBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/edit_black" />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv1"
+            android:text="abc"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/profileView"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTv"
+            android:text="abc@gmail.com"
+            android:layout_toEndOf="@id/profileView"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileRl"
+        android:id="@+id/displayRl"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/Tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display"
+            android:layout_marginStart="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/themeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/light_mode_black" />
+
+        <TextView
+            android:id="@+id/themeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv2"
+            android:text="Theme"
+            android:layout_toEndOf="@id/themeView"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/themeSettTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/themeTv"
+            android:text="Light"
+            android:layout_toEndOf="@id/themeView"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/gray2"/>
+
+        <Switch
+            android:id="@+id/set_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_below="@id/Tv2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/displayRl"
+        android:id="@+id/helpRl"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/Tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:layout_marginStart="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/privacyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/lock_black" />
+
+        <TextView
+            android:id="@+id/privacySettTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv3"
+            android:text="Privacy Policy"
+            android:layout_toEndOf="@id/privacyView"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/Tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:layout_marginStart="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactRl"
+        android:layout_below="@id/helpRl">
+
+        <ImageView
+            android:id="@+id/helpView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/help_black" />
+
+        <TextView
+            android:id="@+id/helpSettTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:layout_toEndOf="@id/helpView"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/helpSettTv"
+            android:text="Questions? Need help?"
+            android:layout_toEndOf="@id/helpView"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/gray2"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactRl"
+        android:id="@+id/logoutRl"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/Tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:layout_marginStart="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/logoutView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv4"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/logout_black" />
+
+        <TextView
+            android:id="@+id/logoutSettTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv4"
+            android:text="Logout"
+            android:layout_toEndOf="@id/logoutView"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fromTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fromAppTv"
+        android:text="from"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="105dp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/fromAppTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Winged World"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

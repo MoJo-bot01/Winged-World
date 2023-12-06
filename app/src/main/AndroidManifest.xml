@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/wwicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/wwicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.activities.AddNewBirdObservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.activities.MapSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.activities.BirdsObservationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.activities.PrivacyPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.activities.EditProfileUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.activities.ContactUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.activities.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.activities.MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.activities.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.activities.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.activities.LaunchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA9543Ev1wo8ZS7hUehBD7rmz458xQbywg" />
+    </application>
+
+</manifest>

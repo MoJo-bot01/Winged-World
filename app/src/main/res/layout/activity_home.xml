@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.activities.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar2">
+
+        <TextView
+            android:id="@+id/Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-thin"
+            android:text="Winged World"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/menuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:layout_below="@id/toolbarRl"
+        android:background="@drawable/shape_circle"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="bold"
+        android:text="Start"
+        android:textSize="25sp"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/settingsBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/settings_black"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        />
+
+    <ImageButton
+        android:id="@+id/helpBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/help_black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.activities.PrivacyPolicyActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar2">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="Privacy Policy"
+            android:fontFamily="sans-serif-thin"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_black"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarRl">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/effectDateTv"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="Effective Date: 01 September 2023"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/introTv"
+                android:textStyle="bold"
+                android:layout_below="@id/effectDateTv"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="1. Introduction"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/introTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/introTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="Welcome to Winged World. We respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal data when you use our mobile application Winged World and related services (collectively, the Service).\n\nBy using our Service, you agree to the practices described in this Privacy Policy. If you do not agree with the terms of this Privacy Policy, please do not use our Service."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/infoWeCollectTv"
+                android:textStyle="bold"
+                android:layout_below="@id/introTextTv"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="2. Information We Collect"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/personalInfoTv"
+                android:textStyle="bold"
+                android:layout_below="@id/infoWeCollectTv"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="2.1 Personal Information:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/personalInfoTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/personalInfoTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="When you use our Service, we may collect personal information that you voluntarily provide to us. This information may include, but is not limited to, your name, email address, phone number, and other personally identifiable information."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/usageInfoTv"
+                android:textStyle="bold"
+                android:layout_below="@id/personalInfoTextTv"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="2.2 Usage Information:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/usageInfoTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/usageInfoTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="We may collect non-personal information about how you use our Service. This may include device information, log data, and usage statistics."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/locationInfoTv"
+                android:textStyle="bold"
+                android:layout_below="@id/usageInfoTextTv"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="2.3 Location Information:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/locationInfoTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/locationInfoTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="We may collect and process information about your geographic location if you enable location-based services within our Service."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cookiesInfoTv"
+                android:textStyle="bold"
+                android:layout_below="@id/locationInfoTextTv"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="2.3 Location Information:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cookiesInfoTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/cookiesInfoTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="We may use cookies and other tracking technologies to collect information about your interactions with our Service."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/howWeUseInfoTv"
+                android:textStyle="bold"
+                android:layout_below="@id/cookiesInfoTextTv"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="3. How We Use Your Information"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/provideAndImproveTv"
+                android:textStyle="bold"
+                android:layout_below="@id/howWeUseInfoTv"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="3.1 Provide and Improve the Service:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/provideAndImproveTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/provideAndImproveTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="We use the information we collect to provide and maintain our Service, improve our offerings, and personalize your experience."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CommunicationTv"
+                android:textStyle="bold"
+                android:layout_below="@id/provideAndImproveTextTv"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="3.2 Communication:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CommunicationTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/CommunicationTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="We may use your contact information to send you updates, promotional materials, and other information related to our Service. You can opt out of receiving certain communications by following the instructions provided in such communications."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/AnalyticsTv"
+                android:textStyle="bold"
+                android:layout_below="@id/CommunicationTextTv"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="3.3 AnalyticsTv:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/AnalyticsTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/AnalyticsTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="We may use analytics tools to analyze how users interact with our Service, which helps us improve and optimize our Service."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/LegalTv"
+                android:textStyle="bold"
+                android:layout_below="@id/AnalyticsTextTv"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="3.4 Legal Compliance:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/LegalTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/LegalTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="We may use your information to comply with legal obligations, resolve disputes, and enforce our agreements."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DisclosureTv"
+                android:textStyle="bold"
+                android:layout_below="@id/LegalTextTv"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="4. Disclosure of Your Information"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DisclosureTv1"
+                android:textStyle="bold"
+                android:layout_below="@id/DisclosureTv"
+                android:layout_marginTop="0dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="We may share your information in the following circumstances:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ThirdPartyTv"
+                android:textStyle="bold"
+                android:layout_below="@id/DisclosureTv1"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="4.1 Third-Party Service Providers:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ThirdPartyTvTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/ThirdPartyTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="We may share your information with third-party service providers who assist us in delivering our Service and supporting our operations."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/BusinessTv"
+                android:textStyle="bold"
+                android:layout_below="@id/ThirdPartyTvTextTv"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="4.2 Business Transfers:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/BusinessTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/BusinessTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="If we are involved in a merger, acquisition, or sale of all or a portion of our assets, your information may be transferred as part of that transaction."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/LegalRequirementsTv"
+                android:textStyle="bold"
+                android:layout_below="@id/BusinessTextTv"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="4.3 Business Transfers:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/LegalRequirementsTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/LegalRequirementsTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="If we are involved in a merger, acquisition, or sale of all or a portion of our assets, your information may be transferred as part of that transaction."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ProtectionTv"
+                android:textStyle="bold"
+                android:layout_below="@id/LegalRequirementsTextTv"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="4.4 Protection of Rights:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ProtectionTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/ProtectionTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="We may disclose your information when we believe it is necessary to protect our rights, privacy, safety, or property, as well as that of our users and others."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SecurityTv"
+                android:textStyle="bold"
+                android:layout_below="@id/ProtectionTextTv"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="5. Security"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SecurityTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/SecurityTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="We take reasonable measures to protect your information from unauthorized access, disclosure, alteration, or destruction. However, no data transmission or storage system is completely secure, and we cannot guarantee the security of your information."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ChoicesTv"
+                android:textStyle="bold"
+                android:layout_below="@id/SecurityTextTv"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="6. Your Choices"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ChoicesTv1"
+                android:textStyle="bold"
+                android:layout_below="@id/ChoicesTv"
+                android:layout_marginTop="0dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="You have choices regarding the information we collect and how it is used:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/AccessTv"
+                android:textStyle="bold"
+                android:layout_below="@id/ChoicesTv1"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="6.1 Access and Correction:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/AccessTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/AccessTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="You may access, correct, or delete your personal information by contacting us at WingedWorld.help.co.za."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cPrivacyTv"
+                android:textStyle="bold"
+                android:layout_below="@id/AccessTextTv"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="7. Children's Privacy"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cPrivacyTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/cPrivacyTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="Our Service is not intended for children under the age of 13. We do not knowingly collect or solicit personal information from children under 13. If you are a parent or guardian and believe we may have collected information about your child, please contact us."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ChangesTv"
+                android:textStyle="bold"
+                android:layout_below="@id/cPrivacyTextTv"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="8. Changes to this Privacy Policy"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ChangesTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/ChangesTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="We reserve the right to modify this Privacy Policy at any time. We will post the updated Privacy Policy on this page with the *Effective Date* at the top of the policy."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ContactUsTv"
+                android:textStyle="bold"
+                android:layout_below="@id/ChangesTextTv"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:text="9. Contact Us"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ContactUsTextTv"
+                android:textStyle="bold"
+                android:layout_below="@id/ContactUsTv"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at WingedWorld.help.co.za."/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

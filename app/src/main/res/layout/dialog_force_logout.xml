@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialogMessage"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="15sp"
+            android:text="You Have Been Logged Out Of Our App Due To:"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:id="@+id/logoutMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="15sp"
+            android:text="Reason"
+            android:layout_below="@id/dialogMessage"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoutMessage"
+            android:text="OK"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-thin"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activities.activities.MapSettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar2">
+
+        <TextView
+            android:id="@+id/Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-thin"
+            android:text="Map Settings"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/back_black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarRl"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="119dp"
+            android:text="Metric: "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupDistanceUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv2"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="105dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonKilometers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Kilometers"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMiles"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="Miles" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioGroupDistanceUnit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="65dp"
+            android:text="Distance willing to travel:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/distanceTil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv3"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/distanceEt"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rec2"
+                android:drawableStart="@drawable/edit_location_gray"
+                android:drawablePadding="10dp"
+                android:hint="Distance in Km/Ml"
+                android:backgroundTint="@color/gray1"
+                android:inputType="text|number"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/applyBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_button2"
+            android:text="Apply Changes"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/distanceTil"
+            android:background="@drawable/shape_button2"
+            android:text="reset settings"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.activities.LaunchActivity">
+
+    <TextView
+        android:id="@+id/welcomeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Welcome to Winged World"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/sloganTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Discover Birding Hotspots Near You"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="bold"
+        android:layout_below="@id/welcomeTv"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="430dp"
+        android:background="@drawable/shape_button1"
+        android:text="Login"
+        android:layout_below="@+id/sloganTv"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginBtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_button1"/>
+
+</RelativeLayout>

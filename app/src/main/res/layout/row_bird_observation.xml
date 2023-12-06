@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp"
+    app:contentPadding="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/shape_rec1"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+
+        <ImageButton
+            android:id="@+id/moreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/more_vert_gray"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"/>
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/profileIv"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_gray"
+            app:shapeAppearanceOverlay="@style/styleRoundedCornersImage"/>
+
+        <TextView
+            android:id="@+id/birdName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bird Name: "
+            android:layout_toEndOf="@id/profileIv"
+            android:layout_marginStart="10dp"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/birdNameTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_toEndOf="@id/birdName"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="bird1"/>
+
+        <TextView
+            android:id="@+id/birdCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bird Count: "
+            android:layout_toEndOf="@id/profileIv"
+            android:layout_below="@id/birdName"
+            android:layout_marginStart="10dp"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/birdCountTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_below="@id/birdNameTextView1"
+            android:layout_toEndOf="@id/birdCount"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="15"/>
+
+        <TextView
+            android:id="@+id/birdDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Added On: "
+            android:layout_toEndOf="@id/profileIv"
+            android:layout_below="@id/birdCount"
+            android:layout_marginStart="10dp"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/birdDateTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_below="@id/birdCountTextView1"
+            android:layout_toEndOf="@id/birdDate"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="15 Jan"/>
+
+        <TextView
+            android:id="@+id/birdLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spotted At: "
+            android:layout_toEndOf="@id/profileIv"
+            android:layout_below="@id/birdDate"
+            android:layout_marginStart="10dp"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/birdLocationTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_below="@id/birdDateTextView1"
+            android:layout_toEndOf="@id/birdLocation"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="Pta"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

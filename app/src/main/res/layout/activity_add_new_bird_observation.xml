@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.activities.AddNewBirdObservationActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar2">
+
+        <TextView
+            android:id="@+id/Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-thin"
+            android:text="Add Bird Observation"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/back_black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarRl"
+        android:layout_marginTop="50dp"
+        android:id="@+id/profileRl">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:id="@+id/profileIv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:src="@drawable/camera_gray"
+            app:shapeAppearanceOverlay="@style/styleRoundedCornersImage"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTil"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/profileIv"
+            app:hintEnabled="false">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:id="@+id/nameEt"
+                android:background="@drawable/shape_edittext1"
+                android:inputType="textPersonName|textCapWords"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray1"
+                android:hint="Bird Name"
+                android:textAlignment="center"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/countTil"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/nameTil"
+            app:hintEnabled="false">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:id="@+id/countEt"
+                android:background="@drawable/shape_edittext1"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray1"
+                android:hint="How Many?"
+                android:textAlignment="center"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addBirdObsBtn"
+            android:layout_below="@id/countTil"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:text="Add Bird Observation"
+            android:background="@drawable/shape_button1"
+            android:layout_marginTop="40dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
